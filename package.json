@@ -1,0 +1,22 @@
+{
+  "name": "mset-qa-interview-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test:ui": "wdio run ./wdio.conf.js",
+    "test:api": "node --test tests/api/*.test.js",
+    "check:ui": "wdio run ./wdio.conf.js --spec ./checks/browser.spec.js",
+    "check:api": "node --test checks/api.test.js",
+    "check": "npm run check:api && npm run check:ui"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^9.0.0",
+    "@wdio/local-runner": "^9.0.0",
+    "@wdio/mocha-framework": "^9.0.0",
+    "@wdio/spec-reporter": "^9.0.0",
+    "@wdio/globals": "^9.0.0",
+    "webdriverio": "^9.0.0"
+  }
+}

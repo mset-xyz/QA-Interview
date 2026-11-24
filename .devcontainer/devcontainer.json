@@ -1,0 +1,6 @@
+{
+  "name": "MSET QA Interview",
+  "build": { "dockerfile": "Dockerfile" },
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
+}
