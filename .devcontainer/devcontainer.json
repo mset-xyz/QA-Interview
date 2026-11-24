@@ -1,6 +1,8 @@
 {
   "name": "MSET QA Interview",
-  "build": { "dockerfile": "Dockerfile" },
-  "postCreateCommand": "npm install",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "npm ci --include=dev",
   "remoteUser": "node"
 }
